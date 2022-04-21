@@ -4,6 +4,6 @@
   <% end %>
 <% else %>
   <%= link_to book_favorites_path(book.id), method: :post, remote: true do %>
-    <i class="far fa-heart text-danger"></i><%= book.favorites.count %>
+    <i class="far fa-heart text-danger"></i><span class="text-dark"><%= book.favorites.count %></span>
   <% end %>
 <% end %>
