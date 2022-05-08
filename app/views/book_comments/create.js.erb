@@ -1,2 +1,3 @@
 $("textarea").val("");
 $('.comments').html("<%= escape_javascript(render "books/comments", book: @book)%>")
+$('.book_detail').html("<%= escape_javascript(render "books/detail", book: @book)%>")
